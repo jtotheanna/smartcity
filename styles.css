@@ -48,8 +48,8 @@ header {
 }
 
 .logo-area h1 {
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 48px;
+	font-family: 'Dongle', cursive;
+	font-size: 60px;
 	margin: 0;
 }
 
@@ -89,9 +89,9 @@ header {
 
 /* Heading spans the full width of .intro-container */
 .intro-heading {
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 56px;
-	line-height: 1.2;
+	font-family: 'Dongle', cursive;
+	font-size: 70px;
+	line-height: 0.7;
 }
 
 /* Flex container for the two-column text + image */
@@ -102,8 +102,8 @@ header {
 	padding-top: 70px;
 }
 
-.max-560 {
-	max-width: 560px;
+.max-300 {
+	max-width: 300px;
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
@@ -126,7 +126,7 @@ header {
 	width: 560px;
 	font-family: 'Dongle', sans-serif;
 	font-size: 40px;
-	line-height: 1;
+	line-height: 0.9;
 }
 
 .intro-text-column p {
@@ -163,9 +163,9 @@ header {
 }
 
 .methodik-heading {
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 48px;
-	margin: 0 0 32px;
+	font-family: 'Dongle', cursive;
+	font-size: 70px;
+	margin: 0 0 0px;
 }
 
 /* Three-column container */
@@ -418,8 +418,8 @@ header {
 } */
 
 .form-block-header h3 {
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 40px;
+	font-family: 'Dongle', cursive;
+	font-size: 50px;
 	margin: 0;
 	color: #000;
 }
@@ -465,8 +465,8 @@ header {
 
 .form-block>label {
 	display: block;
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 40px;
+	font-family: 'Dongle', cursive;
+	font-size: 50px;
 	margin: 0 0 8px 0;
 	color: #000;
 }
@@ -604,8 +604,8 @@ header {
 }
 
 .site-footer p {
-	font-family: 'Bagel Fat One', cursive;
-	font-size: 20px;
+	font-family: 'Dongle', cursive;
+	font-size: 30px;
 	color: #aaa;
 	margin: 0;
 }
