@@ -128,13 +128,14 @@
 			<!-- Third Section (Methodik) -->
 			<section class="methodik-section" id="methodik">
 				<h2 class="methodik-heading">Methodik</h2>
+				<p class="small-info">Sechs Faktoren bestimmen hauptsächlich den späteren Pkw-Besitz in einem Quartier. Die Daten dafür liegen für jedes Projekt ohnehin vor oder können mit wenig Aufwand z.B. über Google Maps recherchiert werden. Grundlage ist das Paper: Tahedl, J. (2021). Pkw-Besitz im Wohnungsbau: Eine Handreichung zur Ermittlung flexibler Stellplatzschlüssel.</p>
 				<div class="methodik-container">
 					<!-- Left Column: Factor boxes with info icons and "×" symbols -->
 					<div class="methodik-left">
 						<div class="left-background">
 							<div class="factor-box">
 								<div class="factor-box-title">
-									<h3>Quartiertyp</h3>
+									<h3>Quartierstyp</h3>
 									<span class="info-icon" data-info="info-quartiertyp">i</span>
 								</div>
 								<p>Weniger Pkw bei hoher Dichte und geringer Wohnnutzung</p>
@@ -164,7 +165,7 @@
 									<h3>Busanbindung</h3>
 									<span class="info-icon" data-info="info-bus">i</span>
 								</div>
-								<p>Weniger Pkw bei vielen Haltestellen und hohem Takt</p>
+								<p>Weniger Pkw bei kurzer Distanz zur Haltestelle und hohem Takt</p>
 							</div>
 							<div class="symbol small-symbol">×</div>
 
@@ -173,16 +174,16 @@
 									<h3>Schienenanbindung</h3>
 									<span class="info-icon" data-info="info-schiene">i</span>
 								</div>
-								<p>Weniger Pkw bei kurzer Distanz und hohem Takt</p>
+								<p>Weniger Pkw bei kurzer Distanz zur Haltestelle und hohem Takt</p>
 							</div>
 							<div class="symbol small-symbol">×</div>
 
 							<div class="factor-box">
 								<div class="factor-box-title">
-									<h3>Reisezeit</h3>
+									<h3>ÖPNV-Reisezeit</h3>
 									<span class="info-icon" data-info="info-reisezeit">i</span>
 								</div>
-								<p>Weniger Pkw bei kurzer Fahrtdauer</p>
+								<p>Weniger Pkw bei kurzer Fahrtdauer ins Stadtzentrum</p>
 							</div>
 						</div>
 					</div>
@@ -197,11 +198,12 @@
 						<div class="left-background">
 							<div class="factor-box-right">
 								<h3>Wohnheiten</h3>
-								<p>Geplante Anzahl an Nutzungseinheiten</p>
+								<p>geplante Anzahl an Wohneinheiten</p>
 							</div>
 							<div class="symbol equals-symbol">=</div>
 							<div class="factor-box-right">
-								<h3>Maximaler Stellplatzbedarf</h3>
+								<h3>erwarteter Pkw-Besitz</h3>
+								<p>Maximalzahl Stellplätze</p>
 							</div>
 						</div>
 					</div>
@@ -212,14 +214,14 @@
 			<section class="section" id="berechnung">
 				<div class="berechnung-container">
 					<div class="berechnung-header">
-						<h2 class="methodik-heading">Berechnung</h2>
-						<p class="small-info">Durchlaufe sieben einfache Berechnungsschritte</p>
+						<h2 class="methodik-heading">Jetzt berechnen!</h2>
+						<p class="small-info">Durchlaufe 7 einfache Berechnungsschritte</p>
 					</div>
 					<form id="calculationForm">
 						<!-- Quartiertyp Step -->
 						<div class="form-block">
 							<div class="form-block-header">
-								<h3>Quartiertyp</h3>
+								<h3>Quartierstyp</h3>
 							</div>
 							<div class="form-block-content">
 								<div class="two-dropdowns">
@@ -227,19 +229,19 @@
 										<label for="anteilWohnen">Anteil Wohnen</label>
 										<select id="anteilWohnen" name="anteilWohnen">
 											<option value="">Bitte wählen</option>
-											<option value="W-">niedrig (&lt;40% ...)</option>
-											<option value="Wo">mittel (40-80% ...)</option>
-											<option value="W+">hoch (&gt;80% ...)</option>
+											<option value="W-">niedrig (&lt;40%)</option>
+											<option value="Wo">mittel (40-80%)</option>
+											<option value="W+">hoch (&gt;80%)</option>
 										</select>
 									</div>
 									<div class="dropdown-block" style="margin-top: 24px;">
-										<label for="dichte">Dichte</label>
+										<label for="dichte">Einwohner*innendichte</label>
 										<select id="dichte" name="dichte">
 											<option value="">Bitte wählen</option>
-											<option value="D--">niedrig (150 - 3.000 ...)</option>
-											<option value="D-">eher niedrig (3.000 - 5.000 ...)</option>
-											<option value="D+">eher hoch (5.000 - 10.000 ...)</option>
-											<option value="D++">hoch (&gt;10.000 ...)</option>
+											<option value="D--">niedrig (150-3.000 Einw./km2)</option>
+											<option value="D-">eher niedrig (3.000-5.000 Einw./km2)</option>
+											<option value="D+">eher hoch (5.000-10.000 Einw./km2)</option>
+											<option value="D++">hoch (&gt;10.000 Einw./km2)</option>
 										</select>
 									</div>
 								</div>
@@ -249,7 +251,7 @@
 						<!-- Nahversorgung Step -->
 						<div class="form-block">
 							<label for="nahversorgungKategorie">Nahversorgung</label>
-							<p class="small-info">Wegdauer zum einkaufen</p>
+							<p class="small-info">Wegedauer zu Fuß zum Einkaufen</p>
 							<select id="nahversorgungKategorie" name="nahversorgungKategorie">
 								<option value="">Bitte wählen</option>
 								<option value="<5">&lt;5 Minuten</option>
@@ -261,8 +263,8 @@
 
 						<!-- Nutzungsart Step -->
 						<div class="form-block">
-							<label>Nutzungsart (Nicht-Wohnnutzung, Mehrfachauswahl möglich)</label>
-							<p class="small-info">Zusätzlich zum Wohnen. Bitte zutreffende auswählen</p>
+							<label>Nutzungsarten</label>
+							<p class="small-info">Vorhandene Nutzungen zusätzlich zum Wohnen im Umkreis von 800-1.000 Metern. Zutreffendes bitte auswählen, Mehrfachauswahl möglichn</p>
 							<div class="checkbox-container">
 								<div class="checkbox-group">
 									<input type="checkbox" id="nutzungsart_gewerbe" name="nutzungsart" value="gewerbe">
@@ -296,28 +298,28 @@
 						<!-- Busanbindung Step -->
 						<div class="form-block">
 							<label for="busCombined">Busanbindung</label>
-							<p class="small-info">Entfernung zur nächsten Haltestelle und Taktung</p>
+							<p class="small-info">Entfernung zur nächsten Haltestelle und Taktung, Taktung ortsübliche einschätzen (Richtwert >300 Abfahrten täglich = hohe Taktung)</p>
 							<select id="busCombined" name="busCombined">
 								<option value="">Bitte wählen</option>
-								<option value="<150_hoch">&lt;150 + hoch</option>
-								<option value="<150_niedrig">&lt;150 + niedrig</option>
-								<option value="150-300_hoch">150-300 + hoch</option>
-								<option value="150-300_niedrig">150-300 + niedrig</option>
-								<option value=">300_any">&gt;300</option>
+								<option value="<150_hoch">&lt;150 m + hohe Taktung</option>
+								<option value="<150_niedrig">&lt;150 m + niedrige Taktung</option>
+								<option value="150-300_hoch">150-300 m + hohe Taktung</option>
+								<option value="150-300_niedrig">150-300 m + niedrige Taktung</option>
+								<option value=">300_any">&gt;300 m + niedrige/hohe Taktung</option>
 							</select>
 						</div>
 
 						<!-- Schienenanbindung Step -->
 						<div class="form-block">
 							<label for="railCombined">Schienenanbindung</label>
-							<p class="small-info">Entfernung zur nächsten Haltestelle und Taktung</p>
+							<p class="small-info">Entfernung zur nächsten Haltestelle und Taktung, Taktung ortsübliche einschätzen (Richtwert >400 Abfahrten täglich = hohe Taktung)</p>
 							<select id="railCombined" name="railCombined">
 								<option value="">Bitte wählen</option>
-								<option value="<300_hoch">&lt;300 + hoch</option>
-								<option value="<300_niedrig">&lt;300 + niedrig</option>
-								<option value="300-600_hoch">300-600 + hoch</option>
-								<option value="300-600_niedrig">300-600 + niedrig</option>
-								<option value=">600_any">&gt;600</option>
+								<option value="<300_hoch">&lt;300 m + hohe Taktung</option>
+								<option value="<300_niedrig">&lt;300 m + niedrige Taktung</option>
+								<option value="300-600_hoch">300-600 m + hohe Taktung</option>
+								<option value="300-600_niedrig">300-600 m + niedrige Taktung</option>
+								<option value=">600_any">&gt;600 m + niedrige/hohe Taktung</option>
 								<option value="none">Keine Schienenanbindung</option>
 							</select>
 						</div>
@@ -325,12 +327,12 @@
 						<!-- ÖPNV-Reisezeit Step -->
 						<div class="form-block">
 							<label for="travelTimeCategory">ÖPNV-Reisezeit ins Zentrum</label>
-							<p class="small-info">Reisedauer ins Zentrum</p>
+							<p class="small-info">Reisedauer ins Zentrum, ortsüblich einzuschätzen</p>
 							<select id="travelTimeCategory" name="travelTimeCategory">
 								<option value="">Bitte wählen</option>
-								<option value="kurz">Kurz</option>
-								<option value="mittel">Mittel</option>
-								<option value="lang">Lang</option>
+								<option value="kurz">kurz</option>
+								<option value="mittel">mittel</option>
+								<option value="lang">lang</option>
 							</select>
 						</div>
 
@@ -356,19 +358,20 @@
 				</div>
 				<div class="form-block-content result-content">
 					<div class="result-row">
-						<label for="stellplatzschluessel" class="result-label">Stellplatzschlüssel:</label>
-						<div class="result-field" id="stellplatzschluessel">--</div>
-
 						<label for="erwartetePkw" class="result-label">zu erwartende Pkw:</label>
 						<div class="result-field" id="erwartetePkw">--</div>
+						
+						<label for="stellplatzschluessel" class="result-label">Obergrenze Stellplatzschlüssel:</label>
+						<div class="result-field" id="stellplatzschluessel">--</div>
 					</div>
 				</div>
+				<p class="small-info">Mit zusätzlichen Maßnahmen kann danach der Stellplatzschlüssel weiter reduziert werden, z.B. durch Quartiersgaragen, verbesserte ÖPNV-Verbindungen, alternative Mobilitätsangebote wie Leihräder oder Parkraumbewirtschaftung im öffentlichen Raum.</p>
 			</div>
 
 	</main>
 
 	<footer class="site-footer">
-		<p>&copy; 2025 &#9474; Hafencity Universität Hamburg &#9474; Herzberg, Nicolai, Schulte &#9474; SmartCity WiSe
+		<p>&copy; 2025 &#9474; HafenCity Universität Hamburg &#9474; Herzberg, Nicolai, Schulte &#9474; SmartCity WiSe
 			2024/2025</p>
 	</footer>
 
